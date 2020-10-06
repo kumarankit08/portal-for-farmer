@@ -57,21 +57,7 @@ const Card = ({
     );
   };
   return (
-    <div className="card text-white bg-dark border border-info ">
-      <div className="card-header lead">{cartTitle}</div>
-      <div className="card-body">
-        {getARedirect(redirect)}
-        <ImageHelper product={product} />
-        <p className="lead bg-success font-weight-normal text-wrap">
-          {cartDescrption}
-        </p>
-        <p className="btn btn-success rounded  btn-sm px-4">Rs {cartPrice}</p>
-        <div className="row">
-          <div className="col-12">{showAddToCart(addtoCart)}</div>
-          <div className="col-12">{showRemoveFromCart(removeFromCart)}</div>
-        </div>
-      </div>
-    </div>
+    
   );
 };
 
